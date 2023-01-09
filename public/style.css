@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2B283A;
+    overflow: hidden;
+}
+
+main {
+    height: 1000px;
+    width: 900px;
+    max-width: 2000px;
+    background-color: #F5F5F5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dice-container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    gap: .91em;
+    width: 800px;
+    height: 300px;
+}
+
+.notHeld {
+    background: #FFFFFF;
+    height: 100px;
+    width: 100px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 3.81277px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+}
+
+.isHeld {
+    background: #59E391;
+    height: 100px;
+    width: 100px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 3.81277px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+}
+
+.die-value {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 24px;
+    text-align: center;
+    color: #2B283A;
+}
+
+button {
+    display: block;
+    background-color: #5035FF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 19px;
+    color: #FFFFFF;
+    height: 75px;
+    width: 250px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+
+.title {
+    font-size: 80px;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.instructions {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+    text-align: center;
+    font-size: 30px;
+    width: 750px;
+    margin-bottom: 50px;
+}
